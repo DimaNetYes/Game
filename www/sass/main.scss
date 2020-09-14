@@ -1,0 +1,551 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  outline: 0;
+}
+
+@mixin adaptive($media){
+  @if $media == smart{
+    @media only screen and (max-width: 480px) {@content}
+  }
+
+  @else if $media == smartHorizon{
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 320px) and (max-height: 414px){@content}
+  }
+
+  @else if $media == tablet{
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {@content}
+  }
+
+  @else if $media = pc{
+    @media only screen and (min-width: 1025px) {@content}
+  }
+}
+
+@include adaptive(pc) {
+  .content {
+    min-width: 400px;
+    width: 710px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 30px auto;
+
+    & form {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    & form input {
+      display: block;
+      font-size: 20px;
+      border: 3px solid black;
+      width: 100px;
+      height: 70px;
+      cursor: pointer;
+      float: right;
+
+      &:active{
+        background: lightsteelblue;
+      }
+
+      &:hover{
+        background: lightcoral;
+      }
+
+    }
+
+    & .info {
+      width: 360px;
+      border: 1px solid black;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .place {
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        & span{
+          font-size: 26px;
+        }
+
+        & span{
+          font-size: 26px;
+        }
+      }
+
+      & .nickname {
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 70px;
+      }
+
+      & .play__button {
+        font-size: 60px;
+        font-weight: bold;
+        color: black;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        position: relative;
+        background: lightgreen;
+        cursor: pointer;
+        color: rebeccapurple;
+        //z-index: 2;
+
+        &:hover{
+          color: lightgreen;
+          background: lightskyblue;
+          &::before, &::after {
+            border-left: 280px solid lightskyblue;
+          }
+        }
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          left: -30px;
+          top: -81px;
+          border: 115px solid transparent;
+          border-left: 280px solid lightgreen;
+          z-index: -1;
+        }
+
+        &::after {
+          border-left: 50px solid white;
+          left: -30px;
+        }
+      }
+
+      & .leaderbord {
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        margin-top: 130px;
+        border: 1px solid black;
+      }
+    }
+  }
+      //<!-- НЕЗАРЕГЕСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ -->
+
+  .content{
+    min-width: 400px;
+    width: 710px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a{
+      border: 1px solid grey;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 36px;
+      width: 30vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: grey;
+      color: black;
+      box-shadow: 0 0 6px 1px rgba(25, 5, 5, 1);
+
+      &:hover{
+        box-shadow: 0 0 25px 3px rgba(51, 204, 0, .8);
+      }
+      &:active{
+        color: darkgrey;
+      }
+    }
+
+  }
+}
+
+  #nickname{
+    font-size: 26px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 25px 3px rgba(120, 120, 120, .8);
+
+    &:hover{
+      box-shadow: 0 0 25px 3px rgba(51, 204, 0, .8);
+    }
+  }
+
+  .play__button {
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    background: lightgreen;
+    cursor: pointer;
+    color: rebeccapurple;
+    //z-index: 2;
+
+    &:hover{
+      color: lightgreen;
+      background: lightskyblue;
+      &::before, &::after {
+        border-left: 280px solid lightskyblue;
+      }
+    }
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: -81px;
+      border: 115px solid transparent;
+      border-left: 280px solid lightgreen;
+      z-index: -1;
+    }
+
+    &::after {
+      border-left: 50px solid white;
+      left: -30px;
+    }
+
+}
+
+@include adaptive(tablet) {
+  .content {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin: 30px auto;
+
+    & form {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    & form input {
+      display: block;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 80px;
+      height: 50px;
+      cursor: pointer;
+      float: right;
+
+      &:active{
+        background: lightsteelblue;
+      }
+    }
+
+    & .info {
+      min-width: 481px;
+      width: auto;
+      border: 1px solid black;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .place {
+        font-size: 60px;
+        font-weight: bold;
+        color: black;
+        & span{
+          font-size: 26px;
+        }
+      }
+
+      & .nickname {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+
+      & .play__button {
+        font-size: 70px;
+        font-weight: bold;
+        color: black;
+        margin-top: 75px;
+        margin-bottom: 80px;
+        position: relative;
+        background: lightgreen;
+        cursor: pointer;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          left: -20px;
+          top: -54px;
+          border: 95px solid transparent;
+          border-left: 310px solid lightgreen;
+          z-index: -1;
+        }
+
+        &::after {
+          border-left: 60px solid white;
+          left: -20px;
+        }
+      }
+
+      & .leaderbord {
+        font-size: 60px;
+        font-weight: bold;
+        color: black;
+        margin-top: 50px;
+        border: 1px solid black;
+      }
+    }
+  }
+
+  //<!-- НЕЗАРЕГЕСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ -->
+
+  .content{
+    width: auto;
+    height: 85vh;
+    border: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a{
+      border: 1px solid grey;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 36px;
+      width: 30vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: grey;
+      color: black;
+      box-shadow: 0 0 6px 3px rgba(25, 5, 5, 1);
+
+      &:hover{
+        box-shadow: 0 0 25px 3px rgba(51, 204, 0, .8);
+      }
+      &:active{
+        color: darkgrey;
+      }
+    }
+
+  }
+}
+
+@include adaptive(smart) {
+  .content {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin: 0px auto;
+
+    & form {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    & form input {
+      display: block;
+      font-size: 20px;
+      border: 1px solid black;
+      width: 80px;
+      height: 50px;
+      cursor: pointer;
+      float: right;
+
+      &:active{
+        background: lightsteelblue;
+      }
+    }
+
+    & .info {
+      max-width: 480px;
+      width: auto;
+      border: 1px solid black;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .place {
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+
+        & span{
+          font-size: 26px;
+        }
+      }
+
+      & .nickname {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+
+      & .play__button {
+        font-size: 70px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 60px;
+        position: relative;
+        background: transparent;
+        cursor: pointer;
+        width: 240px;
+        height: 190px;
+        overflow: hidden;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: -3px;
+          border: 95px solid transparent;
+          border-left: 240px solid lightgreen;
+          z-index: -1;
+        }
+
+        &::after {
+          border-left: 50px solid white;
+          left: 0px;
+        }
+      }
+
+      & .leaderbord {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        margin-top: 50px;
+        border: 1px solid black;
+      }
+    }
+  }
+
+  //<!-- НЕЗАРЕГЕСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ -->
+
+  .content{
+    width: auto;
+    height: 90vh;
+    border: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a{
+      border: 1px solid grey;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 36px;
+      width: 30vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: grey;
+      color: black;
+      box-shadow: 0 0 6px 3px rgba(25, 5, 5, 1);
+
+      &:hover{
+        box-shadow: 0 0 25px 3px rgba(51, 204, 0, .8);
+      }
+      &:active{
+        color: darkgrey;
+      }
+    }
+
+  }
+}
+
+@include adaptive(smartHorizon) {
+
+
+  //<!-- НЕЗАРЕГЕСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ -->
+
+  .content {
+    width: auto;
+    height: 97vh;
+    //border: 1px solid black;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      border: 1px solid grey;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 36px;
+      width: 30vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: grey;
+      color: black;
+      box-shadow: 0 0 6px 3px rgba(25, 5, 5, 1);
+
+      &:hover {
+        box-shadow: 0 0 25px 3px rgba(51, 204, 0, .8);
+      }
+
+      &:active {
+        color: darkgrey;
+      }
+    }
+
+    & .play__button {
+      font-size: 60px;
+      font-weight: bold;
+      color: black;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      position: relative;
+      background: lightgreen;
+      cursor: pointer;
+      color: rebeccapurple;
+
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: -39px;
+        border: 75px solid transparent;
+        border-left: 210px solid lightgreen;
+        z-index: -1;
+      }
+
+      &::after {
+        border-left: 70px solid white;
+        left: 10px;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

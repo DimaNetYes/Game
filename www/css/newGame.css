@@ -1,0 +1,287 @@
+@media only screen and (max-width: 480px) {
+  #secundomer {
+    position: absolute;
+    left: 110px;
+    top: -40px;
+    width: 180px; }
+    #secundomer span {
+      display: inline-block;
+      position: relative;
+      margin-left: -15px; }
+  .content {
+    width: auto;
+    height: 86vh;
+    border: 1px solid black;
+    margin: 0px auto;
+    margin-top: 70px;
+    position: relative; }
+  span {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    font-size: 35px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    visibility: visible;
+    padding: 7px;
+    transition: opacity 1.5s ease-in-out; }
+  .spanCheck {
+    opacity: 0;
+    background: #40ef3d;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanNone {
+    display: none; }
+  .spanError {
+    background: #ee2929;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanErrorNone {
+    transition: background 1.5s ease-in-out;
+    border-radius: 4px;
+    background: none; }
+  #info {
+    display: none;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .nickname {
+    margin-bottom: 10px; }
+  .signature {
+    font-size: 55px;
+    font-weight: lighter;
+    position: relative;
+    margin-top: 60px; }
+    .signature p {
+      display: inline;
+      font-size: 65px;
+      font-weight: bold; }
+  #repeat {
+    font-size: 60px;
+    margin-top: 60px;
+    background: lightblue; }
+  #ok {
+    font-size: 60px;
+    margin-top: 40px;
+    background: lightgreen; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 320px) and (max-height: 414px) {
+  #secundomer {
+    position: absolute;
+    left: 40px;
+    top: 40vh;
+    width: auto;
+    color: rgba(173, 79, 21, 0.5); }
+    #secundomer span {
+      display: inline-block;
+      position: relative;
+      margin-left: -15px;
+      font-size: 19vw;
+      font-weight: 200; }
+  .content {
+    width: auto;
+    height: 95vh;
+    border: 1px solid black;
+    margin: 0px auto;
+    position: relative; }
+  span {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    font-size: 35px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    visibility: visible;
+    padding: 7px;
+    transition: opacity 1.5s ease-in-out; }
+  .spanCheck {
+    opacity: 0;
+    background: #40ef3d;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanNone {
+    display: none; }
+  .spanError {
+    background: #ee2929;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanErrorNone {
+    transition: background 1.5s ease-in-out;
+    border-radius: 4px;
+    background: none; }
+  #info {
+    display: none;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .nickname {
+    margin-bottom: 10px; }
+  .signature {
+    font-size: 55px;
+    font-weight: lighter;
+    position: relative;
+    margin-top: 60px; }
+    .signature p {
+      display: inline;
+      font-size: 65px;
+      font-weight: bold; }
+  #repeat {
+    font-size: 60px;
+    margin-top: 60px;
+    background: lightblue; }
+  #ok {
+    font-size: 60px;
+    margin-top: 40px;
+    background: lightgreen; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 415px) {
+  #secundomer {
+    position: absolute;
+    left: 250px;
+    top: -50px;
+    width: 180px; }
+    #secundomer span {
+      display: inline-block;
+      position: relative;
+      margin-left: -15px; }
+  .content {
+    width: auto;
+    height: 86vh;
+    border: 1px solid black;
+    margin: 40px auto;
+    margin-top: 90px;
+    position: relative; }
+  span {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    font-size: 35px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    visibility: visible;
+    padding: 7px;
+    transition: opacity 1.5s ease-in-out; }
+  .spanCheck {
+    opacity: 0;
+    background: #40ef3d;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanNone {
+    display: none; }
+  .spanError {
+    background: #ee2929;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanErrorNone {
+    transition: background 1.5s ease-in-out;
+    border-radius: 4px;
+    background: none; }
+  #info {
+    display: none;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .nickname {
+    margin-bottom: 10px; }
+  .signature {
+    font-size: 55px;
+    font-weight: lighter;
+    position: relative;
+    margin-top: 60px; }
+    .signature p {
+      display: inline;
+      font-size: 65px;
+      font-weight: bold; }
+  #repeat {
+    font-size: 60px;
+    margin-top: 60px;
+    background: lightblue; }
+  #ok {
+    font-size: 60px;
+    margin-top: 40px;
+    background: lightgreen; } }
+
+@media only screen and (min-width: 1025px) {
+  #secundomer {
+    position: absolute;
+    left: 250px;
+    top: -30px;
+    width: 180px; }
+    #secundomer span {
+      display: inline-block;
+      position: relative;
+      margin-left: -15px; }
+  .content {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 40px auto;
+    position: relative; }
+  span {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    visibility: visible;
+    padding: 7px;
+    transition: opacity 1.5s ease-in-out; }
+  .spanCheck {
+    opacity: 0;
+    background: #40ef3d;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanNone {
+    display: none; }
+  .spanError {
+    background: #ee2929;
+    padding: 7px;
+    height: 10px;
+    border-radius: 4px; }
+  .spanErrorNone {
+    transition: background 1.5s ease-in-out;
+    border-radius: 4px;
+    background: none; }
+  #info {
+    display: none;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .nickname {
+    margin-bottom: 10px; }
+  .signature {
+    font-size: 12px;
+    font-weight: lighter;
+    position: relative; }
+    .signature p {
+      display: inline;
+      font-size: 18px;
+      font-weight: bold; } }

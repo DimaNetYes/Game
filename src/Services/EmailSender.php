@@ -1,0 +1,25 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: McCalister
+ * Date: 21.07.2020
+ * Time: 17:36
+ */
+
+namespace Services;
+
+use Models\Users\User;
+
+class EmailSender
+{
+    public static function send(User $receiver, string $subject, string $templateName, array $templateVars = []): void {
+        extract($templateVars);
+
+        ob_start();
+        require __DIR__ . '/../../templates/mail/' . $templateName;
+        $body = ob_get_contents();
+        ob_end_clean();
+
+        mail($receiver->getEmail(), $subject, $body, 'Content-Type: text/html; charset=UTF-8');
+    }
+}
