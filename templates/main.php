@@ -52,9 +52,9 @@ if($time) {
         btnPlay.addEventListener('click', function(){
             if(document.getElementById('nickname')) {
                 let nickname = document.getElementById('nickname').value;
-                location.href = "http://mvcgame/www/games/fastDigit?nickname=" + nickname;
+                location.href = "http://simplename.pp.ua/mvcgame/www/games/fastDigit?nickname=" + nickname;
             }else{
-                location.href = "http://mvcgame/www/games/fastDigit";
+                location.href = "http://simplename.pp.ua/mvcgame/www/games/fastDigit";
             }
 
             // if(nickname){

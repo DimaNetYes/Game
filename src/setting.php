@@ -2,8 +2,8 @@
 return [
     'db' => [
         'host' => 'localhost',
-        'dbname' => 'game',
-        'user' => 'root',
-        'password' => '',
+        'dbname' => 'biba_game',
+        'user' => 'biba_game',
+        'password' => '1234',
     ]
 ];
