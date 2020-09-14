@@ -8,7 +8,7 @@
     <div class="card"></div>
     <div class="card">
         <h1 class="title">Login</h1>
-        <form action="/www/users/login" method="post">
+        <form action="/mvcgame/www/users/login" method="post">
             <div class="input-container">
                 <input type="text" id="email" name="email" value="<?= $_POST['email'] ?? '' ?>" required="required"/>
                 <label for="email">Email</label>
@@ -28,7 +28,7 @@
         <h1 class="title">Register
             <div class="close"></div>
         </h1>
-        <form action="/www/users/register" method="post">
+        <form action="/mvcgame/www/users/register" method="post">
             <div class="input-container">
                 <input type="text" id="login" name="login" value="<?= $_POST['login'] ?>" required="required" />
                 <label for="login">Login</label>

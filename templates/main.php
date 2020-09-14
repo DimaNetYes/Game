@@ -22,7 +22,7 @@ if($time) {
 }
 ?>
     <div class="content">
-        <form action="/www/users/out" method="post">
+        <form action="/mvcgame/www/users/out" method="post">
             <input type="submit" class='out' value="Out">
         </form>
         <div class="info">
@@ -38,7 +38,7 @@ if($time) {
     <div class="content">
 <!--        <div class="login"></div>-->
 <!--        <div class="regis"></div>-->
-        <a href="/www/users/register">Login</a>
+        <a href="/mvcgame/www/users/register">Login</a>
         <input type="text" placeholder="nickname" id="nickname"> <!-- Временный ник -->
         <button class="play__button">Play</button>
     </div>

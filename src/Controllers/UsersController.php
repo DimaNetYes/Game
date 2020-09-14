@@ -31,7 +31,7 @@ class UsersController extends AbstractController
                 $user = User::login($_POST);
                 //Создание токена (cookie)
                 UsersAuthService::createToken($user); //Установка "Токенной" Куки
-                header('Location: /www/users/main');
+                header('Location: /mvcgame/www/users/main');
                 exit();
             } catch (InvalidArgumentException $e) {
                 $this->view->renderHtml('signUp/signUp.php', ['error' => $e->getMessage()]);
@@ -81,7 +81,7 @@ class UsersController extends AbstractController
         if ($isCodeValid) {
             $user->activate();
 //            $this->view->renderHtml("main.php", [], "200");
-            header('Location: /www/users/main');
+            header('Location: /mvcgame/www/users/main');
 //            exit();
         }
     }
@@ -90,7 +90,7 @@ class UsersController extends AbstractController
     {
         setcookie('token', '', time()-3600, '/', '', false, true);
 //        $this->view->renderHTML("main.php", [], 200);
-        header('Location: /www/users/main');
+        header('Location: /mvcgame/www/users/main');
         exit();
     }
 
