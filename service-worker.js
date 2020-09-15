@@ -34,8 +34,12 @@ self.addEventListener('install', function(event) {
                         .then(assets => {
                             // Открываем и кэшируем нужные страницы и файлы
                             const urlsToCache = [
+                                '//simplename.pp.ua/www/',
                                 '/www',
                                 '/www/users/register',
+                                '/www/css',
+                                '/www/images',
+                                '/www/js',
                             '/static/core/logo.svg*',
                         ]
                             cache.addAll(urlsToCache)
