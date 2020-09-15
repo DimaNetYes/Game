@@ -1,8 +1,5 @@
 <?php
-setcookie("TestCookie", 123, time()+3600);
-//setcookie("TestCookie", 123, time()-300);
-print_r($_COOKIE);
-
+echo empty(strrpos('abcde abcde', 'a'));
 
 ?>
 <!DOCTYPE html>

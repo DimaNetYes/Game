@@ -1,14 +1,27 @@
 <?php
 
-//require("../src/Exceptions/ErrorHandler.php");
-//(new Exceptions\ErrorHandler())->register();
-
 spl_autoload_register(function (string $className) {
-    require_once __DIR__ . '/../src/' . $className . '.php';
+    $className = substr_replace($className, '/', strpos($className, '\\'), 1);
+    if(!empty(strrpos($className, '\\'))){
+        $className = substr_replace($className, '/', strpos($className, '\\'), 1);
+    }
+    // $className = substr_replace($className, '/', strpos($className, '\\'), 1);
+    // print_r($className);
+    $path = realpath('../src');
+    // print_r($path . '/' . $className . '.php');
+    require_once $path . '/' . $className . '.php';
+
+
 });
 
+// $route =substr($_GET['route'], 0, strpos($_GET['route'], '/')) ?? '';
 $route = $_GET['route'] ?? '';
 $routes = require "../src/routes.php";
+
+// require '../src/Controllers/MainController.php';
+// require '../src/View/View.php';
+// require '../src/Models/Users/User.php';
+// require '/../ActiveRecordEntity.php';
 
 $isRouteFound = false;
 foreach ($routes as $pattern => $controllerAndAction) {
@@ -30,4 +43,3 @@ $actionName = $controllerAndAction[1];
 
 $controller = new $controllerName();
 $controller->$actionName(...$matches);
-
