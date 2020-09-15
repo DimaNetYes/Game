@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!--                ЭТО ДЛЯ ИКОНОК ТЕЛЕФОНА И PWA (manifest)-->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="../manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="../www/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../www/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../www/images/favicon-16x16.png">
