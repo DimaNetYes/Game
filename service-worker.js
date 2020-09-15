@@ -34,11 +34,13 @@ self.addEventListener('install', function(event) {
                         .then(assets => {
                             // Открываем и кэшируем нужные страницы и файлы
                             const urlsToCache = [
-                                '//simplename.pp.ua/www/',
-                                '/www',
+                                'https://simplename.pp.ua/mvcgame/templates/header.php',
+                                'https://simplename.pp.ua/mvcgame/templates/main.php',
+                                'https://simplename.pp.ua/mvcgame/templates/footer.php',
+                                'https://simplename.pp.ua/mvcgame/www',
                                 '/www/users/register',
-                                '/www/css',
-                                '/www/images',
+                                'https://simplename.pp.ua/mvcgame/www/css/main.css',
+                                'https://simplename.pp.ua/mvcgame/www/images',
                                 '/www/js',
                             '/static/core/logo.svg*',
                         ]
