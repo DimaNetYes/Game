@@ -10,13 +10,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../../www/css/newGame.css">
+    <link rel="stylesheet" href="https://simplename.pp.ua/mvcgame/www/css/newGame.css">
     <script src="https://simplename.pp.ua/mvcgame/www/js/newGame.js"></script>
     <script src="https://simplename.pp.ua/mvcgame/www/js/styleClasses__NewGame.js"></script>
     <script src="https://simplename.pp.ua/mvcgame/www/js/secundomer.js"></script>
 
 <!--    ЭТО ДЛЯ ИКОНОК ТЕЛЕФОНА И PWA (manifest)-->
-    <link rel="manifest" href="../../manifest.json">
+    <link rel="manifest" href="https://simplename.pp.ua/mvcgame/manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="https://simplename.pp.ua/mvcgame/www/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://simplename.pp.ua/mvcgame/www/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://simplename.pp.ua/mvcgame/www/images/favicon-16x16.png">

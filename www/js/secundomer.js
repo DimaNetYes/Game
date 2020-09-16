@@ -61,7 +61,7 @@
                 arr.push(el.innerHTML.split(":").join(''));  //min, sec, ms
             }
 
-            AJAX('http://mvcgame/www/games/fastDigit', 'POST', arr);
+            AJAX('https://simplename.pp.ua/mvcgame/www/games/fastDigit', 'POST', arr);
         }
     }
 
@@ -78,6 +78,7 @@ function AJAX (url, method, data) {
     xhr.onload = function(){
         if(xhr.readyState === 4 && xhr.status === 200){
                      //Позиция игрока с учетом текущего времени
+            console.log("DEL");
             let jsonPosFirst = this.responseText.indexOf('{');
             let jsonPosLast = this.responseText.indexOf('}');
             let playerPosition = this.responseText.slice(jsonPosFirst+13, jsonPosLast).trim(); // Вырезали число позиции игрока
