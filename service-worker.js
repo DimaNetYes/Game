@@ -37,11 +37,11 @@ self.addEventListener('install', function(event) {
                                 'https://simplename.pp.ua/mvcgame/templates/header.php',
                                 'https://simplename.pp.ua/mvcgame/templates/main.php',
                                 'https://simplename.pp.ua/mvcgame/templates/footer.php',
-                                'https://simplename.pp.ua/mvcgame/www',
-                                '/www/users/register',
+                                'https://simplename.pp.ua/mvcgame/www/',
+                                'https://simplename.pp.ua/mvcgame/www/users/register/',
                                 'https://simplename.pp.ua/mvcgame/www/css/main.css',
                                 'https://simplename.pp.ua/mvcgame/www/images',
-                                '/www/js',
+                                'https://simplename.pp.ua/mvcgame/www/js/',
                             '/static/core/logo.svg*',
                         ]
                             cache.addAll(urlsToCache)
