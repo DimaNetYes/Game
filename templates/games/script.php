@@ -11,17 +11,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../../www/css/newGame.css">
-    <script src="../../www/js/newGame.js"></script>
-    <script src="../../www/js/styleClasses__NewGame.js"></script>
-    <script src="../../www/js/secundomer.js"></script>
+    <script src="https://simplename.pp.ua/mvcgame/www/js/newGame.js"></script>
+    <script src="https://simplename.pp.ua/mvcgame/www/js/styleClasses__NewGame.js"></script>
+    <script src="https://simplename.pp.ua/mvcgame/www/js/secundomer.js"></script>
 
 <!--    ЭТО ДЛЯ ИКОНОК ТЕЛЕФОНА И PWA (manifest)-->
     <link rel="manifest" href="../../manifest.json">
-    <link rel="apple-touch-icon" sizes="180x180" href="../www/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../www/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../www/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://simplename.pp.ua/mvcgame/www/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://simplename.pp.ua/mvcgame/www/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://simplename.pp.ua/mvcgame/www/images/favicon-16x16.png">
     <!--    <link rel="manifest" href="/www/images/site.webmanifest">-->
-    <link rel="mask-icon" href="../www/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="https://simplename.pp.ua/mvcgame/www/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#fe5378">
     <meta name="theme-color" content="#ffffff">
 </head>
