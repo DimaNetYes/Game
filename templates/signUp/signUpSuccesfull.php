@@ -7,6 +7,6 @@
 
 <?php
 //var_dump($user); //DELETE THIS
-    echo '<script>setTimeout(\'location="http://mvcgame/www/users/main"\', 3000)</script>';
+    echo '<script>setTimeout(\'location="https://simplename.pp.ua/mvcgame/www/users/main"\', 3000)</script>';
 ?>
 <?php include __DIR__ . '/../footer.php'; ?>
