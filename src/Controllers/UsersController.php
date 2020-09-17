@@ -77,9 +77,6 @@ class UsersController extends AbstractController
     {
         $user = User::getById($userId);
         $isCodeValid = UserActivationService::checkActivationCode($user, $activationCode);
-        var_dump($user);
-        echo "<br> A: " . $activationCode . "<br>";
-        echo $isCodeValid;
         if ($isCodeValid) {
             $user->activate();
 //            $this->view->renderHtml("main.php", [], "200");
