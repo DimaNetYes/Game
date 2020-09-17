@@ -47,7 +47,7 @@
         </div>
         <div class="position"></div>
         <button id="repeat">Repeat</button>
-        <form action="/www/users/main" method="post" > <!-- onsubmit="return positionSend()" -->
+        <form action="/mvcgame/www/users/main" method="post" > <!-- onsubmit="return positionSend()" -->
             <input type="hidden" name="position" value="">
             <input type=submit id="ok" value="ok">
         </form>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="position"></div>
                 <button id="repeat">Repeat</button>
-                <form action="/www/users/main" method="post" > <!-- onsubmit="return positionSend()" -->
+                <form action="/mvcgame/www/users/main" method="post" > <!-- onsubmit="return positionSend()" -->
                     <input type="hidden" name="position" value="">
                     <input type=submit id="ok" value="ok">
                 </form>
