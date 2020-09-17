@@ -3,18 +3,18 @@
   "name": "9248",
   "icons": [
     {
-      "src": "/mvcgame/www/images/android-chrome-192x192.png",
+      "src": "https://simplename.pp.ua/mvcgame//www/images/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/mvcgame/www/images/android-chrome-512x512.png",
+      "src": "https://simplename.pp.ua/mvcgame/www/images/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
 
-  "start_url": "/mvcgame/www/",
+  "start_url": "https://simplename.pp.ua/mvcgame/www/users/main",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "orientation": "any",
