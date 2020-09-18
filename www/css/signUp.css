@@ -69,7 +69,8 @@
     max-width: 460px;
     width: 100%;
     margin: 0 auto 100px;
-    box-shadow: 0 40px 50px #999; }
+    box-shadow: 0 40px 50px #999;
+    margin-top: 30px; }
     .container.active .card:first-child {
       background: #f2f2f2;
       margin: 0 15px; }

@@ -5,13 +5,28 @@
   font-size: 0;
   outline: 0; }
 
+body::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  /* background: url(); */
+  background: url(images/bg.png) left top repeat;
+  filter: blur(3px); }
+
 @media only screen and (min-width: 1025px) {
   .content {
     min-width: 400px;
     width: 710px;
     height: 600px;
-    border: 1px solid black;
-    margin: 30px auto; }
+    margin: 30px auto;
+    background: url(images/bg.png) left top repeat;
+    border: 1px solid rgba(1, 1, 1, 0.2);
+    border-radius: 42px;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5); }
     .content form {
       display: flex;
       flex-direction: row;
@@ -58,7 +73,8 @@
         position: relative;
         background: lightgreen;
         cursor: pointer;
-        color: rebeccapurple; }
+        color: rebeccapurple;
+        z-index: 1; }
         .content .info .play__button:hover {
           color: lightgreen;
           background: lightskyblue; }
@@ -85,7 +101,10 @@
     min-width: 400px;
     width: 710px;
     height: 600px;
-    border: 1px solid black;
+    background: url(images/bg.png) left top repeat;
+    border: 1px solid rgba(1, 1, 1, 0.2);
+    border-radius: 42px;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -125,7 +144,8 @@
   position: relative;
   background: lightgreen;
   cursor: pointer;
-  color: rebeccapurple; }
+  color: rebeccapurple;
+  z-index: 1; }
   .play__button:hover {
     color: lightgreen;
     background: lightskyblue; }
@@ -147,8 +167,10 @@
   .content {
     width: auto;
     height: auto;
-    border: 1px solid black;
-    margin: 30px auto; }
+    margin: 30px auto;
+    background: url(images/bg.png) left top repeat;
+    border-radius: 42px;
+    box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.5); }
     .content form {
       display: flex;
       flex-direction: row;
@@ -191,7 +213,8 @@
         margin-bottom: 80px;
         position: relative;
         background: lightgreen;
-        cursor: pointer; }
+        cursor: pointer;
+        z-index: 1; }
         .content .info .play__button::before, .content .info .play__button::after {
           content: '';
           position: absolute;
@@ -212,12 +235,14 @@
   .content {
     width: auto;
     height: 85vh;
-    border: 1px solid black;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    background: url(images/bg.png) left top repeat;
+    border-radius: 42px;
+    box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.5); }
     .content a {
       border: 1px solid grey;
       text-decoration: none;
@@ -239,8 +264,8 @@
   .content {
     width: auto;
     height: auto;
-    border: 1px solid black;
-    margin: 0px auto; }
+    margin: 0px auto;
+    background: url(images/bg.png) left top repeat; }
     .content form {
       display: flex;
       flex-direction: row;
@@ -285,7 +310,8 @@
         cursor: pointer;
         width: 240px;
         height: 190px;
-        overflow: hidden; }
+        overflow: hidden;
+        z-index: 1; }
         .content .info .play__button::before, .content .info .play__button::after {
           content: '';
           position: absolute;
@@ -306,7 +332,7 @@
   .content {
     width: auto;
     height: 90vh;
-    border: 1px solid black;
+    background: url(images/bg.png) left top repeat;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -333,6 +359,7 @@
   .content {
     width: auto;
     height: 97vh;
+    background: url(images/bg.png) left top repeat;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -363,7 +390,8 @@
       position: relative;
       background: lightgreen;
       cursor: pointer;
-      color: rebeccapurple; }
+      color: rebeccapurple;
+      z-index: 1; }
       .content .play__button::before, .content .play__button::after {
         content: '';
         position: absolute;
