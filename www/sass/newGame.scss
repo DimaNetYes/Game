@@ -4,11 +4,11 @@
   }
 
   @else if $media == smartHorizon{
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 320px) and (max-height: 414px){@content}
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 320px) and (max-height: 434px){@content}
   }
 
   @else if $media == tablet{
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 415px) {@content}
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 435px) {@content}
   }
 
   @else if $media = pc{
