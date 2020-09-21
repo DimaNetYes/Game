@@ -338,6 +338,15 @@ body::before{
 
 @include adaptive(pc) {
 
+  #BackMain{
+    background: url(https://simplename.pp.ua/mvcgame/www/images/strela1.png) no-repeat center;
+    background-size: 110px;
+    padding: 20px 60px;
+    position: absolute;
+    left: 80px;
+    top: -40px;
+  }
+
   #secundomer {
     position: absolute;
     left: 250px;

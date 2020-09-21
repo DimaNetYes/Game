@@ -27,8 +27,8 @@
 </head>
 <body>
 
-
 <div class="content">
+    <a href="https://simplename.pp.ua/mvcgame/www/users/main" id="BackMain"></a>
     <div id="secundomer">
         <span id="s_minutes">00 : </span>
         <span id="s_seconds">00 : </span>
