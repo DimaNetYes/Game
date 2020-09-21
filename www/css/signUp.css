@@ -250,6 +250,10 @@
         border-radius: 10px; }
         .card .footer a:hover {
           box-shadow: 0px 0px 20px 2px #838689; }
+      .card .footer #BackMain {
+        background: url(https://simplename.pp.ua/mvcgame/www/images/strela.png) no-repeat center;
+        background-size: 110px;
+        padding: 30px 60px; }
     .card.alt {
       position: absolute;
       top: 40px;
@@ -626,6 +630,10 @@
         border-radius: 10px; }
         .card .footer a:hover {
           box-shadow: 0px 0px 20px 2px #838689; }
+      .card .footer #BackMain {
+        background: url(https://simplename.pp.ua/mvcgame/www/images/strela.png) no-repeat center;
+        background-size: 110px;
+        padding: 30px 60px; }
     .card.alt {
       position: absolute;
       top: 10%;
@@ -1006,6 +1014,10 @@
         border-radius: 10px; }
         .card .footer a:hover {
           box-shadow: 0px 0px 20px 2px #838689; }
+      .card .footer #BackMain {
+        background: url(https://simplename.pp.ua/mvcgame/www/images/strela.png) no-repeat center;
+        background-size: 110px;
+        padding: 30px 60px; }
     .card.alt {
       position: absolute;
       top: 0%;

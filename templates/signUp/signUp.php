@@ -20,7 +20,7 @@
                 <div class="bar"></div>
             </div>
             <div class="button-container"><button><span>Go</span></button></div>
-            <div class="footer"><a href="#">Forgot your password?</a></div>
+            <div class="footer"><a href="https://simplename.pp.ua/mvcgame/www/users/main" id="BackMain"></a></div>
         </form>
     </div>
     <div class="card alt">

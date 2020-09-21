@@ -112,7 +112,7 @@ if(isset($_POST['time']) && !empty($_POST['time'])){
 ?>
 
 <script>
-    let cntGame = 8; //Количество цифр
+    let cntGame = 6; //Количество цифр
     newGame(cntGame);
     styleClasses(cntGame);
 </script>

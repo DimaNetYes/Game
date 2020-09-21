@@ -26,7 +26,6 @@ body::before {
     margin: 0px auto;
     margin-top: 70px;
     position: relative;
-    background: url(../../www/css/images/bg.png) left top repeat;
     border-radius: 42px; }
   span {
     margin: 0px;
@@ -103,7 +102,6 @@ body::before {
     height: 95vh;
     margin: 0px auto;
     position: relative;
-    background: url(../../www/css/images/bg.png) left top repeat;
     border-radius: 42px; }
   span {
     margin: 0px;
@@ -178,7 +176,6 @@ body::before {
     margin: 40px auto;
     margin-top: 90px;
     position: relative;
-    background: url(../../www/css/images/bg.png) left top repeat;
     border-radius: 42px;
     box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.5); }
   span {
@@ -253,7 +250,6 @@ body::before {
     height: 80vh;
     margin: 40px auto;
     position: relative;
-    background: url(../../www/css/images/bg.png) left top repeat;
     border-radius: 42px;
     box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.5); }
   span {
@@ -263,7 +259,7 @@ body::before {
     cursor: pointer;
     user-select: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     line-height: 10px;
     font-weight: bold;
@@ -294,12 +290,25 @@ body::before {
     align-items: center;
     justify-content: center; }
   .nickname {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-top: 4vh; }
   .signature {
-    font-size: 12px;
+    font-size: 22px;
     font-weight: lighter;
     position: relative; }
     .signature p {
       display: inline;
       font-size: 18px;
-      font-weight: bold; } }
+      font-weight: bold; }
+  .position {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  #repeat {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px; }
+  #ok {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px; } }
