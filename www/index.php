@@ -10,8 +10,6 @@ spl_autoload_register(function (string $className) {
     $path = realpath('../src');
     // print_r($path . '/' . $className . '.php');
     require_once $path . '/' . $className . '.php';
-
-
 });
 
 // $route =substr($_GET['route'], 0, strpos($_GET['route'], '/')) ?? '';
