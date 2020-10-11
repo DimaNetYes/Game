@@ -1,4 +1,8 @@
 @media only screen and (max-width: 480px) {
+  .back {
+    position: absolute;
+    top: -25px;
+    left: 20px; }
   #secundomer {
     position: absolute;
     left: 110px;
@@ -149,6 +153,10 @@
     background: lightgreen; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (min-height: 415px) {
+  .back {
+    position: absolute;
+    top: -25px;
+    left: 20px; }
   #secundomer {
     position: absolute;
     left: 250px;
@@ -223,6 +231,10 @@
     background: lightgreen; } }
 
 @media only screen and (min-width: 1025px) {
+  .back {
+    position: absolute;
+    top: -25px;
+    left: 20px; }
   #secundomer {
     position: absolute;
     left: 250px;

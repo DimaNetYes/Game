@@ -19,6 +19,12 @@
 
 @include adaptive(smart){
 
+  .back{
+    position: absolute;
+    top: -25px;
+    left: 20px;
+  }
+
   #secundomer{
     position: absolute;
     left: 110px;
@@ -221,6 +227,13 @@
 
 
 @include adaptive(tablet){
+
+  .back{
+    position: absolute;
+    top: -25px;
+    left: 20px;
+  }
+
   #secundomer{
     position: absolute;
     left: 250px;
@@ -320,6 +333,12 @@
 }
 
 @include adaptive(pc) {
+
+  .back{
+    position: absolute;
+    top: -25px;
+    left: 20px;
+  }
 
   #secundomer {
     position: absolute;

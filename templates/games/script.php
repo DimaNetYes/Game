@@ -18,7 +18,9 @@
 <body>
 
 
+
 <div class="content">
+    <a href="http://mvcgame/www/users/main" class="back">Back</a>
     <div id="secundomer">
         <span id="s_minutes">00 : </span>
         <span id="s_seconds">00 : </span>
