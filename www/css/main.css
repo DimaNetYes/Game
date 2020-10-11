@@ -123,7 +123,20 @@ body::before {
       .content a:hover {
         box-shadow: 0 0 25px 3px rgba(51, 204, 0, 0.8); }
       .content a:active {
-        color: darkgrey; } }
+        color: darkgrey; }
+  #enot {
+    position: absolute;
+    top: 480px;
+    left: 260px; }
+  #enot input[type="submit"] {
+    font-size: 30px;
+    background: url(https://simplename.pp.ua/mvcgame/www/css/images/coins.png) no-repeat center center;
+    background-size: contain;
+    width: 90px;
+    height: 90px; }
+  #enot input[type="submit"]:hover {
+    box-shadow: inset 1px 1px 35px rgba(255, 150, 0, 0.4);
+    border-radius: 31px; } }
 
 #nickname {
   font-size: 26px;

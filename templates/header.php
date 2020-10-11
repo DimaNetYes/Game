@@ -20,6 +20,7 @@
     <link rel="mask-icon" href="https://simplename.pp.ua/mvcgame/www/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#fe5378">
     <meta name="theme-color" content="#ffffff">
+    <meta name="enot" content="9051602162097C_arWnejLNBQy98JyTxwkQLt6umj0fMy" />
 </head>
 <body>
 <script>

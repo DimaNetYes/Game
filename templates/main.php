@@ -20,6 +20,7 @@
     <link rel="mask-icon" href="https://simplename.pp.ua/mvcgame/www/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#fe5378">
     <meta name="theme-color" content="#ffffff">
+    <meta name="enot" content="9051602162097C_arWnejLNBQy98JyTxwkQLt6umj0fMy" />
 </head>
 <body>
 
@@ -65,6 +66,23 @@ if($time) {
         <input type="text" placeholder="nickname" id="nickname"> <!-- Временный ник -->
         <button class="play__button">Play</button>
     </div>
+
+<?php
+    $MERCHANT_ID   = 5891;                 // ID магазина
+    $SECRET_WORD   = 'Секретный ключ';   // Секретный ключ
+    $ORDER_AMOUNT  = 10;                 // Сумма заказа
+    $PAYMENT_ID    = time();             // ID заказа (мы используем time(), чтобы был всегда уникальный ID)
+
+    $sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID);  //Генерация ключа
+?>
+
+<form method='get' action='https://enot.io/pay' id="enot">
+    <input type='hidden' name='m' value='<?=$MERCHANT_ID?>'>
+    <input type='hidden' name='oa' value='<?=$ORDER_AMOUNT?>'>
+    <input type='hidden' name='o' value='<?=$PAYMENT_ID?>'>
+    <input type='hidden' name='s' value='<?=$sign?>'>
+    <input type="submit" value="">
+</form>
 
 <?php
     endif;
